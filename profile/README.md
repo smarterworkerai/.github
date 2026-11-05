@@ -34,24 +34,13 @@ So everything here is built around three properties:
 
 ```mermaid
 flowchart TB
-    subgraph L3["Layer 3 · ADW: agentic delivery"]
-        direction LR
-        ADW["agentic-delivery<br/>generic task contract<br/>and agent skills"] --> CTX["pzagent-adw-context<br/>smarterworkerai provider:<br/>CI, releases, deploys"]
+    DB["Layer 1 · devbox<br/>developer and agent machines"] --> SB["Layer 2 · serverbox<br/>servers: Dokploy, k3s, Rancher"]
+    SB --> ADW
+    subgraph L3["Layer 3 · ADW"]
+        ADW["agentic-delivery<br/>generic task contract"] --> CTX["pzagent-adw-context<br/>provider: CI, releases, deploys"]
     end
-    subgraph L2["Layer 2 · serverbox"]
-        SB["Servers over SSH:<br/>Dokploy, k3s + Rancher,<br/>Docker, mise"]
-    end
-    subgraph L1["Layer 1 · devbox"]
-        DB["Developer and agent<br/>machines: WSL2, VMs,<br/>Ansible + mise"]
-    end
-    L1 --> L2 --> L3
-    CTX --> P1["mwcal2"] & P2["smart-invoice"] & P3["appletree"] & P4["more consumers"]
-
-    subgraph X["Shared services"]
-        direction LR
-        SEC["pz-secretctl<br/>secrets"] ~~~ BUS["nats-agent-bus<br/>agent messaging"] ~~~ RUN["github-runner<br/>CI capacity"] ~~~ BRD["vikunja<br/>team board"]
-    end
-    L3 -.uses.- X
+    CTX --> C["Consumers<br/>mwcal2 · smart-invoice · appletree · …"]
+    S["Shared services<br/>pz-secretctl · nats-agent-bus<br/>github-runner · vikunja"] -.- L3
 ```
 
 - **ADW** is the delivery workflow. **agentic-delivery** defines a generic, fail-closed task contract that any agent can follow. **pzagent-adw-context** is the smarterworkerai provider on top of it: it supplies the CI workflows, quality gates, signed releases, immutable publications and deployments to Dokploy and Kubernetes.
@@ -61,16 +50,17 @@ flowchart TB
 ## How a change gets delivered
 
 ```mermaid
-flowchart LR
-    I["GitHub issue"] --> B["Branch +<br/>pull request"]
+flowchart TB
+    I["GitHub issue"] --> B["Branch + pull request"]
     B --> Q["CI: full quality<br/>on a self-hosted runner"]
     Q --> R{"Review by another agent<br/>for this exact commit"}
     R -- changes --> B
-    R -- approved --> D["Promote<br/>to demo"]
-    D --> M["Promote<br/>to main"]
-    M --> P["Publish an immutable,<br/>digest-pinned release"]
+    R -- approved --> D["Promote to demo"]
+    D --> M["Promote to main"]
+    M --> P["Immutable, digest-pinned release"]
     P --> E1["pr-preview"] & E2["demo"]
-    P --> H{"Human go"} --> E3["production"]
+    P --> H{"Human go"}
+    H --> E3["production"]
 ```
 
 - Promotions are fast-forwards of the exact reviewed commit; nothing is rebuilt or merged in between.
@@ -81,12 +71,11 @@ flowchart LR
 
 ```mermaid
 flowchart TB
-    HUM["Human<br/>owner and decisions"] <--> LEAD["Lead agent<br/>plans the round,<br/>assigns, integrates"]
-    LEAD <--> A1["Builder agents<br/>(Codex, Claude)"]
+    HUM["Human<br/>owner and decisions"] <--> LEAD["Lead agent<br/>plans the round, assigns, integrates"]
+    LEAD <--> A1["Builder agents<br/>Codex, Claude"]
     LEAD <--> A2["Reviewer agents"]
-    A1 <-- "review requests<br/>and verdicts" --> A2
-    LEAD --- BOARD["Vikunja board:<br/>one view per round"]
-    A1 & A2 --- GH["GitHub:<br/>issues, PRs, reviews"]
+    A1 <-- "review requests, verdicts" --> A2
+    A1 & A2 & LEAD --- REC["GitHub issues, PRs, reviews<br/>Vikunja board: a view per round"]
 ```
 
 - Work is organised in **rounds**: the human sets scope and goals, and the lead agent breaks them into cards, assigns builders and reviewers, and reports back.
@@ -102,16 +91,16 @@ flowchart TB
 **Secrets: centralised, and never in an agent's context.** **pz-secretctl** keeps secrets in encrypted SOPS/age vaults, shared ones and one per agent. An agent never reads a value: it runs a command with the secret injected into that command's environment.
 
 ```mermaid
+%%{init: {"sequence": {"mirrorActors": false, "actorMargin": 40, "width": 120}}}%%
 sequenceDiagram
     participant A as Agent
     participant S as pz-secretctl
-    participant V as Encrypted vault
-    participant T as Tool (git, gh, deploy)
-    A->>S: run SECRET_ID -- tool …
-    S->>V: decrypt with the agent's own key
-    S->>T: start tool with the secret in its environment
-    T-->>A: only the tool's output
-    Note over A,T: The value never appears in chat, logs or commits
+    participant T as Tool
+    A->>S: run SECRET -- tool
+    Note over S: decrypts with<br/>the agent's own key
+    S->>T: secret in its env
+    T-->>A: output only
+    Note over A,T: The value never reaches chat, logs or commits
 ```
 
 **Secure agent-to-agent communication.** Agents coordinate through **nats-agent-bus**, a NATS JetStream hub reached over TLS:
