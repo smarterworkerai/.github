@@ -2,7 +2,7 @@
 
 **Software delivered by a team of AI agents, with a human in charge, and every step on the record.**
 
-**Languages:** `Java` · `Go` · `Python` · `JavaScript` · `Bash` · `HTML`
+**Languages:** `Java` · `Go` · `Python` · `TypeScript` · `JavaScript` · `Bash` · `HTML`
 
 > [!NOTE]
 > This is the public overview of the smarterworkerai organization. The repositories are private: to look at the code, **[request access](#user-content-request-access)**, and you will get a time-limited, read-only access ticket.
