@@ -5,7 +5,7 @@
 **Languages:** `Java` · `Go` · `Python` · `JavaScript` · `Bash` · `HTML`
 
 > [!NOTE]
-> This is the public overview of the smarterworkerai organization. The repositories are private: to look at the code, **[request access](mailto:smarterworkerai@protonmail.com?subject=Access%20request%3A%20smarterworkerai%20repositories&body=Hello%20smarterworkerai%20team%2C%0A%0AI%20would%20like%20read%20access%20to%20the%20following%20repositories%20or%20areas%3A%0A-%0A%0APurpose%20%28for%20example%20code%20review%2C%20evaluation%2C%20collaboration%29%3A%0A%0AName%3A%0ACompany%20or%20organisation%3A%0AE-mail%20address%20for%20the%20access%20ticket%3A%0APreferred%20time%20frame%3A%0A%0AThank%20you%21%0A)**, and you will get a time-limited, read-only access ticket.
+> This is the public overview of the smarterworkerai organization. The repositories are private: to look at the code, **[request access](#request-access)**, and you will get a time-limited, read-only access ticket.
 
 - [Why agentic delivery needs discipline](#why-agentic-delivery-needs-discipline)
 - [The building blocks](#the-building-blocks)
@@ -207,7 +207,7 @@ Question answering over documents with retrieval-augmented generation. The secon
 
 ## Repositories
 
-All repositories are private. **[Request access](mailto:smarterworkerai@protonmail.com?subject=Access%20request%3A%20smarterworkerai%20repositories&body=Hello%20smarterworkerai%20team%2C%0A%0AI%20would%20like%20read%20access%20to%20the%20following%20repositories%20or%20areas%3A%0A-%0A%0APurpose%20%28for%20example%20code%20review%2C%20evaluation%2C%20collaboration%29%3A%0A%0AName%3A%0ACompany%20or%20organisation%3A%0AE-mail%20address%20for%20the%20access%20ticket%3A%0APreferred%20time%20frame%3A%0A%0AThank%20you%21%0A)** to any of them.
+All repositories are private. **[Request access](#request-access)** to any of them.
 
 ### Delivery platform (ADW)
 
@@ -271,5 +271,10 @@ All repositories are private. **[Request access](mailto:smarterworkerai@protonma
 ## Request access
 
 The repositories above are private. For a read-only look at the code, for example for a review or an
-evaluation, **[send an access request](mailto:smarterworkerai@protonmail.com?subject=Access%20request%3A%20smarterworkerai%20repositories&body=Hello%20smarterworkerai%20team%2C%0A%0AI%20would%20like%20read%20access%20to%20the%20following%20repositories%20or%20areas%3A%0A-%0A%0APurpose%20%28for%20example%20code%20review%2C%20evaluation%2C%20collaboration%29%3A%0A%0AName%3A%0ACompany%20or%20organisation%3A%0AE-mail%20address%20for%20the%20access%20ticket%3A%0APreferred%20time%20frame%3A%0A%0AThank%20you%21%0A)** (it opens an e-mail draft to smarterworkerai@protonmail.com).
-You will receive a personal access ticket for the code review browser.
+evaluation, write to `smarterworkerai@protonmail.com` with the subject "Access request: smarterworkerai repositories". Tell us which repositories
+or areas you would like to see, the purpose, your name and organisation, the e-mail address for the access
+ticket, and your preferred time frame.
+
+Open a prepared draft in: **[your mail app](mailto:smarterworkerai@protonmail.com?subject=Access%20request%3A%20smarterworkerai%20repositories&body=Hello%20smarterworkerai%20team%2C%0A%0AI%20would%20like%20read%20access%20to%20the%20following%20repositories%20or%20areas%3A%0A-%0A%0APurpose%20%28for%20example%20code%20review%2C%20evaluation%2C%20collaboration%29%3A%0A%0AName%3A%0ACompany%20or%20organisation%3A%0AE-mail%20address%20for%20the%20access%20ticket%3A%0APreferred%20time%20frame%3A%0A%0AThank%20you%21%0A)** · **[Gmail](https://mail.google.com/mail/?view=cm&fs=1&to=smarterworkerai@protonmail.com&su=Access%20request%3A%20smarterworkerai%20repositories&body=Hello%20smarterworkerai%20team%2C%0A%0AI%20would%20like%20read%20access%20to%20the%20following%20repositories%20or%20areas%3A%0A-%0A%0APurpose%20%28for%20example%20code%20review%2C%20evaluation%2C%20collaboration%29%3A%0A%0AName%3A%0ACompany%20or%20organisation%3A%0AE-mail%20address%20for%20the%20access%20ticket%3A%0APreferred%20time%20frame%3A%0A%0AThank%20you%21%0A)** · **[Outlook](https://outlook.office.com/mail/deeplink/compose?to=smarterworkerai@protonmail.com&subject=Access%20request%3A%20smarterworkerai%20repositories&body=Hello%20smarterworkerai%20team%2C%0A%0AI%20would%20like%20read%20access%20to%20the%20following%20repositories%20or%20areas%3A%0A-%0A%0APurpose%20%28for%20example%20code%20review%2C%20evaluation%2C%20collaboration%29%3A%0A%0AName%3A%0ACompany%20or%20organisation%3A%0AE-mail%20address%20for%20the%20access%20ticket%3A%0APreferred%20time%20frame%3A%0A%0AThank%20you%21%0A)**
+
+You will receive a personal, time-limited access ticket for the code review browser.
