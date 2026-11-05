@@ -93,16 +93,17 @@ flowchart TB
 **Secrets: centralised, and never in an agent's context.** **pz-secretctl** keeps secrets in encrypted SOPS/age vaults, shared ones and one per agent. An agent never reads a value: it runs a command with the secret injected into that command's environment.
 
 ```mermaid
-%%{init: {"sequence": {"mirrorActors": false, "actorMargin": 40, "width": 120}}}%%
+%%{init: {"sequence": {"mirrorActors": false}}}%%
 sequenceDiagram
     participant A as Agent
     participant S as pz-secretctl
-    participant T as Tool
-    A->>S: run SECRET -- tool
-    Note over S: decrypts with<br/>the agent's own key
-    S->>T: secret in its env
-    T-->>A: output only
-    Note over A,T: The value never reaches chat, logs or commits
+    participant V as Encrypted vault
+    participant T as Tool (git, gh, deploy)
+    A->>S: run SECRET_ID -- tool …
+    S->>V: decrypt with the agent's own key
+    S->>T: start tool with the secret in its environment
+    T-->>A: only the tool's output
+    Note over A,T: The value never appears in chat, logs or commits
 ```
 
 **Secure agent-to-agent communication.** Agents coordinate through **nats-agent-bus**, a NATS JetStream hub reached over TLS:
