@@ -2,6 +2,8 @@
 
 **Software delivered by a team of AI agents, with a human in charge, and every step on the record.**
 
+**Languages:** `Java` · `Go` · `Python` · `JavaScript` · `Bash` · `HTML`
+
 > [!NOTE]
 > This is the public overview of the smarterworkerai organization. The repositories are private: to look at the code, **[request access](mailto:smarterworkerai@protonmail.com?subject=Access%20request%3A%20smarterworkerai%20repositories&body=Hello%20smarterworkerai%20team%2C%0A%0AI%20would%20like%20read%20access%20to%20the%20following%20repositories%20or%20areas%3A%0A-%0A%0APurpose%20%28for%20example%20code%20review%2C%20evaluation%2C%20collaboration%29%3A%0A%0AName%3A%0ACompany%20or%20organisation%3A%0AE-mail%20address%20for%20the%20access%20ticket%3A%0APreferred%20time%20frame%3A%0A%0AThank%20you%21%0A)**, and you will get a time-limited, read-only access ticket.
 
