@@ -106,7 +106,7 @@ Every agent runs in its own tab of **Herdr**, a terminal workspace for coding ag
 ### Vikunja: the round on one board
 
 The self-hosted **Vikunja** board shows each round as a Kanban board with the same five columns: **To do → In progress → In review → Waiting for human → Done**.
-- Each card is one GitHub issue or pull request of one builder.
+- Each card is one task of one agent, usually a GitHub issue or pull request.
 - Labels name the repository, the round and the reviewer.
 - "Waiting for human" collects everything that needs a decision.
 - Agents move their own cards with a small command-line client at the moments they also report on the bus.
@@ -115,9 +115,9 @@ The self-hosted **Vikunja** board shows each round as a Kanban board with the sa
 
 *A round on the board: the kickoff is done, fixes are in progress and in review, and one production step waits for the human.*
 
-![A Vikunja card: the pull request link, labels for repository, round and reviewer, the release it blocks, and the review result as a comment](https://raw.githubusercontent.com/smarterworkerai/.github/main/profile/docs/screenshots/vikunja-card.png)
+![A finished Vikunja card: rebuild a test virtual machine with the Kubernetes stack, the commands in its description, the card it waited for and the cards it unblocked, and the agent's progress note as a comment](https://raw.githubusercontent.com/smarterworkerai/.github/main/profile/docs/screenshots/vikunja-card.png)
 
-*One card: the pull request, its reviewer, the release it blocks, and the approval recorded as a comment.*
+*One card, done: rebuild a test machine for the Kubernetes proof. The description says how, the relations show what it waited for and what it unblocked, and the agent notes its progress as a comment.*
 
 ## Secrets and agent communication
 
