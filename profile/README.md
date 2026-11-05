@@ -1,4 +1,4 @@
-# smarterworkerai
+# smarterworker.ai
 
 **Software delivered by a team of AI agents, with a human in charge, and every step on the record.**
 
