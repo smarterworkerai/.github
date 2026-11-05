@@ -2,7 +2,7 @@
 
 **Software delivered by a team of AI agents, with a human in charge, and every step on the record.**
 
-*A non-commercial development project: nothing here is offered for sale.*
+*A non-commercial development project.*
 
 **Languages:** `Java` · `Go` · `Python` · `TypeScript` · `JavaScript` · `Bash` · `HTML`
 
