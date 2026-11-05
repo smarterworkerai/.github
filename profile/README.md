@@ -11,6 +11,7 @@
 - [The building blocks](#the-building-blocks)
 - [How a change gets delivered](#how-a-change-gets-delivered)
 - [A team of agents instead of a Scrum team](#a-team-of-agents-instead-of-a-scrum-team)
+- [Where the work happens: Herdr and Vikunja](#where-the-work-happens-herdr-and-vikunja)
 - [Secrets and agent communication](#secrets-and-agent-communication)
 - [Environments, fully automated](#environments-fully-automated)
 - [Using resources well](#using-resources-well)
@@ -87,6 +88,36 @@ flowchart TB
   - production, secrets and settings need the human;
   - an acceptance step stops after four failed attempts.
 - **Traceability:** cards link GitHub issues and pull requests, where every decision and proof is recorded.
+
+## Where the work happens: Herdr and Vikunja
+
+### Herdr: one terminal, the whole team
+
+Every agent runs in its own tab of **Herdr**, a terminal workspace for coding agents: the lead agent `claude_1`, further Claude agents, and the Codex builders and reviewers `codex_1` to `codex_5`. The human talks to the lead agent, looks into any agent's tab when needed, and pastes the round's pre-approval into each tab. The agents coordinate among themselves over the agent bus; the tabs show what each one is doing.
+
+![The lead agent's tab in Herdr: a round status with three provider fixes, their pull requests and reviewers](https://raw.githubusercontent.com/smarterworkerai/.github/main/profile/docs/screenshots/herdr-lead-agent.png)
+
+*The lead agent reports the round's state: which fixes are approved, which are in review, and by whom.*
+
+![A Codex agent's tab in Herdr: it sends a review verdict over the agent bus, checks its inbox and reads the CI checks of a pull request](https://raw.githubusercontent.com/smarterworkerai/.github/main/profile/docs/screenshots/herdr-codex-agent.png)
+
+*A Codex reviewer at work: verdict to the author and the lead over the bus, inbox check, CI status of the pull request with the token injected by pz-secretctl.*
+
+### Vikunja: the round on one board
+
+The self-hosted **Vikunja** board shows each round as a Kanban board with the same five columns: **To do → In progress → In review → Waiting for human → Done**.
+- Each card is one GitHub issue or pull request of one builder.
+- Labels name the repository, the round and the reviewer.
+- "Waiting for human" collects everything that needs a decision.
+- Agents move their own cards with a small command-line client at the moments they also report on the bus.
+
+![A round on the Vikunja board: cards in To do, In progress, In review, Waiting for human and Done, labelled with repository, round and reviewer](https://raw.githubusercontent.com/smarterworkerai/.github/main/profile/docs/screenshots/vikunja-round-board.png)
+
+*A round on the board: the kickoff is done, fixes are in progress and in review, and one production step waits for the human.*
+
+![A Vikunja card: the pull request link, labels for repository, round and reviewer, the release it blocks, and the review result as a comment](https://raw.githubusercontent.com/smarterworkerai/.github/main/profile/docs/screenshots/vikunja-card.png)
+
+*One card: the pull request, its reviewer, the release it blocks, and the approval recorded as a comment.*
 
 ## Secrets and agent communication
 
