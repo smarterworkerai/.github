@@ -181,7 +181,7 @@ Every environment, from a laptop to production, can be rebuilt from these reposi
 
 ## Projects
 
-### 📅 Main project · **mwcal2**
+### 📅 Full-featured multi-module project · **mwcal2**
 
 Appointment booking: a calendar UI, and booking by browser voice or by telephone. A provider-neutral voice runtime talks to the caller, and every release is immutable and digest-pinned.
 
@@ -253,7 +253,7 @@ All repositories are private. **[Request access](#user-content-request-access)**
 
 | Repository | Description |
 |---|---|
-| **mwcal2** | **Main project.** Appointment booking with a calendar UI, browser voice and telephone channels |
+| **mwcal2** | **Full-featured multi-module project.** Appointment booking with a calendar UI, browser voice and telephone channels |
 | **smart-invoice** | **Demo.** Invoicing with ZUGFeRD / EN 16931 e-invoices |
 | **appletree** | **Demo.** A Three.js scene as a static application, the smallest ADW consumer |
 | **rag-poc** | **PoC.** Document question answering with retrieval-augmented generation |
