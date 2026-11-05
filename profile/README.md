@@ -111,6 +111,22 @@ sequenceDiagram
 - permissions are scoped per agent, so an agent can only send as itself and read its own messages;
 - review requests carry the exact pull request and commit, so a verdict can never drift to another version.
 
+```mermaid
+%%{init: {"sequence": {"mirrorActors": false}}}%%
+sequenceDiagram
+    participant B as Builder agent
+    participant H as Agent bus (NATS, TLS)
+    participant R as Reviewer agent
+    Note over B: pushes the branch,<br/>opens the pull request
+    B->>H: review request:<br/>PR 42 at commit 3f2a…
+    H->>R: to its own inbox
+    Note over R: checks exactly<br/>commit 3f2a…
+    R->>H: approved for 3f2a…
+    H->>B: to its own inbox
+    Note over B: promotes only<br/>commit 3f2a…
+    Note over B,R: Each agent signs with its own key:<br/>it sends only as itself and reads only its own messages
+```
+
 **nab-registry** holds the public credentials.
 
 ## Environments, fully automated
