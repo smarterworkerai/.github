@@ -271,8 +271,8 @@ All repositories are private. **[Request access](#user-content-request-access)**
 ## Request access
 
 The repositories above are private. For a read-only look at the code, for example for a review or an
-evaluation, send a short e-mail to `smarterworkerai@protonmail.com`.
+evaluation, send a short e-mail to `access@smarterworker.ai`.
 
-Open a prepared draft in: **[your mail app](mailto:smarterworkerai@protonmail.com?subject=Access%20request%3A%20smarterworkerai%20repositories&body=Hello%20smarterworkerai%20team%2C%0A%0AI%20would%20like%20read%20access%20to%20your%20repositories.%0A%0AThank%20you%21%0A)** · **[Gmail](https://mail.google.com/mail/?view=cm&fs=1&to=smarterworkerai@protonmail.com&su=Access%20request%3A%20smarterworkerai%20repositories&body=Hello%20smarterworkerai%20team%2C%0A%0AI%20would%20like%20read%20access%20to%20your%20repositories.%0A%0AThank%20you%21%0A)** · **[Outlook](https://outlook.office.com/mail/deeplink/compose?to=smarterworkerai@protonmail.com&subject=Access%20request%3A%20smarterworkerai%20repositories&body=Hello%20smarterworkerai%20team%2C%0A%0AI%20would%20like%20read%20access%20to%20your%20repositories.%0A%0AThank%20you%21%0A)**
+Open a prepared draft in: **[your mail app](mailto:access@smarterworker.ai?subject=Access%20request%3A%20smarterworkerai%20repositories&body=Hello%20smarterworkerai%20team%2C%0A%0AI%20would%20like%20read%20access%20to%20your%20repositories.%0A%0AThank%20you%21%0A)** · **[Gmail](https://mail.google.com/mail/?view=cm&fs=1&to=access@smarterworker.ai&su=Access%20request%3A%20smarterworkerai%20repositories&body=Hello%20smarterworkerai%20team%2C%0A%0AI%20would%20like%20read%20access%20to%20your%20repositories.%0A%0AThank%20you%21%0A)** · **[Outlook](https://outlook.office.com/mail/deeplink/compose?to=access@smarterworker.ai&subject=Access%20request%3A%20smarterworkerai%20repositories&body=Hello%20smarterworkerai%20team%2C%0A%0AI%20would%20like%20read%20access%20to%20your%20repositories.%0A%0AThank%20you%21%0A)**
 
 You will receive a personal, time-limited access ticket for the code review browser.
