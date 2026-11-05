@@ -5,19 +5,19 @@
 **Languages:** `Java` · `Go` · `Python` · `JavaScript` · `Bash` · `HTML`
 
 > [!NOTE]
-> This is the public overview of the smarterworkerai organization. The repositories are private: to look at the code, **[request access](#request-access)**, and you will get a time-limited, read-only access ticket.
+> This is the public overview of the smarterworkerai organization. The repositories are private: to look at the code, **[request access](#user-content-request-access)**, and you will get a time-limited, read-only access ticket.
 
-- [Why agentic delivery needs discipline](#why-agentic-delivery-needs-discipline)
-- [The building blocks](#the-building-blocks)
-- [How a change gets delivered](#how-a-change-gets-delivered)
-- [A team of agents instead of a Scrum team](#a-team-of-agents-instead-of-a-scrum-team)
-- [Where the work happens: Herdr and Vikunja](#where-the-work-happens-herdr-and-vikunja)
-- [Secrets and agent communication](#secrets-and-agent-communication)
-- [Environments, fully automated](#environments-fully-automated)
-- [Using resources well](#using-resources-well)
-- [Products](#products)
-- [Repositories](#repositories)
-- [Request access](#request-access)
+- [Why agentic delivery needs discipline](#user-content-why-agentic-delivery-needs-discipline)
+- [The building blocks](#user-content-the-building-blocks)
+- [How a change gets delivered](#user-content-how-a-change-gets-delivered)
+- [A team of agents instead of a Scrum team](#user-content-a-team-of-agents-instead-of-a-scrum-team)
+- [Where the work happens: Herdr and Vikunja](#user-content-where-the-work-happens-herdr-and-vikunja)
+- [Secrets and agent communication](#user-content-secrets-and-agent-communication)
+- [Environments, fully automated](#user-content-environments-fully-automated)
+- [Using resources well](#user-content-using-resources-well)
+- [Products](#user-content-products)
+- [Repositories](#user-content-repositories)
+- [Request access](#user-content-request-access)
 
 ---
 
@@ -207,7 +207,7 @@ Question answering over documents with retrieval-augmented generation. The secon
 
 ## Repositories
 
-All repositories are private. **[Request access](#request-access)** to any of them.
+All repositories are private. **[Request access](#user-content-request-access)** to any of them.
 
 ### Delivery platform (ADW)
 
