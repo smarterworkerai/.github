@@ -2,6 +2,8 @@
 
 **Software delivered by a team of AI agents, with a human in charge, and every step on the record.**
 
+*A non-commercial development project: nothing here is offered for sale.*
+
 **Languages:** `Java` · `Go` · `Python` · `TypeScript` · `JavaScript` · `Bash` · `HTML`
 
 > [!NOTE]
@@ -15,7 +17,7 @@
 - [Secrets and agent communication](#user-content-secrets-and-agent-communication)
 - [Environments, fully automated](#user-content-environments-fully-automated)
 - [Using resources well](#user-content-using-resources-well)
-- [Products](#user-content-products)
+- [Projects](#user-content-projects)
 - [Repositories](#user-content-repositories)
 - [Request access](#user-content-request-access)
 
@@ -177,11 +179,11 @@ Every environment, from a laptop to production, can be rebuilt from these reposi
 - a layered cache: shared download caches (Maven, npm) plus exact, per-project build-result caches. A change that touches no dependency downloads nothing and finishes in a fraction of the time;
 - safety switches (a breaker, a sweeper, a heartbeat) keep a broken runner from blocking work.
 
-## Products
+## Projects
 
-### 🚀 Flagship · **mwcal2**
+### 📅 Main project · **mwcal2**
 
-Production-ready appointment booking: a calendar UI, and booking by browser voice or by telephone. A provider-neutral voice runtime talks to the caller, and every release is immutable and digest-pinned.
+Appointment booking: a calendar UI, and booking by browser voice or by telephone. A provider-neutral voice runtime talks to the caller, and every release is immutable and digest-pinned.
 
 `React` · `Spring Boot` · `OpenAI Realtime` · `Gemini Live` · `Asterisk` · `PostgreSQL`
 
@@ -247,11 +249,11 @@ All repositories are private. **[Request access](#user-content-request-access)**
 | **hermes-delegation** | Always-on SSH worker that takes delegated coding tasks |
 | **sandbox-delegation** | The same delegation worker inside an isolated virtual machine |
 
-### Products, demos and research
+### Projects, demos and research
 
 | Repository | Description |
 |---|---|
-| **mwcal2** | **Flagship.** Appointment booking with a calendar UI, browser voice and telephone channels |
+| **mwcal2** | **Main project.** Appointment booking with a calendar UI, browser voice and telephone channels |
 | **smart-invoice** | **Demo.** Invoicing with ZUGFeRD / EN 16931 e-invoices |
 | **appletree** | **Demo.** A Three.js scene as a static application, the smallest ADW consumer |
 | **rag-poc** | **PoC.** Document question answering with retrieval-augmented generation |
@@ -270,9 +272,9 @@ All repositories are private. **[Request access](#user-content-request-access)**
 
 ## Request access
 
-The repositories above are private. For a read-only look at the code, for example for a review or an
-evaluation, send a short e-mail to `access@smarterworker.ai`.
+The repositories above are private. For a read-only look at the code, send a short e-mail to
+`smarterworkerai@protonmail.com`.
 
-Open a prepared draft in: **[your mail app](mailto:access@smarterworker.ai?subject=Access%20request%3A%20smarterworkerai%20repositories&body=Hello%20smarterworkerai%20team%2C%0A%0AI%20would%20like%20read%20access%20to%20your%20repositories.%0A%0AThank%20you%21%0A)** · **[Gmail](https://mail.google.com/mail/?view=cm&fs=1&to=access@smarterworker.ai&su=Access%20request%3A%20smarterworkerai%20repositories&body=Hello%20smarterworkerai%20team%2C%0A%0AI%20would%20like%20read%20access%20to%20your%20repositories.%0A%0AThank%20you%21%0A)** · **[Outlook](https://outlook.office.com/mail/deeplink/compose?to=access@smarterworker.ai&subject=Access%20request%3A%20smarterworkerai%20repositories&body=Hello%20smarterworkerai%20team%2C%0A%0AI%20would%20like%20read%20access%20to%20your%20repositories.%0A%0AThank%20you%21%0A)**
+Open a prepared draft in: **[your mail app](mailto:smarterworkerai@protonmail.com?subject=Access%20request%3A%20smarterworkerai%20repositories&body=Hello%20smarterworkerai%20team%2C%0A%0AI%20would%20like%20read%20access%20to%20your%20repositories.%0A%0AThank%20you%21%0A)** · **[Gmail](https://mail.google.com/mail/?view=cm&fs=1&to=smarterworkerai@protonmail.com&su=Access%20request%3A%20smarterworkerai%20repositories&body=Hello%20smarterworkerai%20team%2C%0A%0AI%20would%20like%20read%20access%20to%20your%20repositories.%0A%0AThank%20you%21%0A)** · **[Outlook](https://outlook.office.com/mail/deeplink/compose?to=smarterworkerai@protonmail.com&subject=Access%20request%3A%20smarterworkerai%20repositories&body=Hello%20smarterworkerai%20team%2C%0A%0AI%20would%20like%20read%20access%20to%20your%20repositories.%0A%0AThank%20you%21%0A)**
 
 You will receive a personal, time-limited access ticket for the code review browser.
