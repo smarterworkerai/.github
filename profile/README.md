@@ -256,6 +256,7 @@ All repositories are private. **[Request access](#user-content-request-access)**
 | **mwcal2** | **Full-featured multi-module project.** Appointment booking with a calendar UI, browser voice and telephone channels |
 | **smart-invoice** | **Demo.** Invoicing with ZUGFeRD / EN 16931 e-invoices |
 | **appletree** | **Demo.** A Three.js scene as a static application, the smallest ADW consumer |
+| **slotvote** | **Early version.** Scheduling poll: participants pick time slots without an account, the organizer assigns them |
 | **rag-poc** | **PoC.** Document question answering with retrieval-augmented generation |
 | **docling-rag-poc** | **PoC.** Fully local RAG with Docling, BGE-M3 and Qdrant |
 | **voice-real** | **Research.** Voice latency of Spring WebSocket to OpenAI Realtime |
